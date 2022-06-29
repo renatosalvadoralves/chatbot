@@ -1,0 +1,32 @@
+{
+  "match": [
+    {
+      "input": ["hi", "hey", "hello", "good morning", "good afternoon"],
+      "output": ["Hello!", "Hi!", "Hey!", "Hi there!", "Howdy"]
+    },
+    {
+      "input": ["how are you", "how is life", "how are things"],
+      "output": [
+        "Fine... how are you?",
+        "Pretty well, how are you?",
+        "Fantastic, how are you?"
+      ]
+    },
+    {
+      "input": ["what are you doing", "what is going on", "what is up"],
+      "output": [
+        "Nothing much",
+        "About to go to sleep",
+        "Can you guess?",
+        "I don't know actually"
+      ]
+    }
+  ],
+  "alternative": [
+    "Same",
+    "Go on...",
+    "Try again",
+    "I'm listening...",
+    "I don't understand :/"
+  ]
+}

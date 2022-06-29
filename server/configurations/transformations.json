@@ -1,0 +1,26 @@
+[
+  {
+    "input": " a ",
+    "output": " "
+  },
+  {
+    "input": "i feel ",
+    "output": ""
+  },
+  {
+    "input": "whats",
+    "output": "what is"
+  },
+  {
+    "input": "please ",
+    "output": ""
+  },
+  {
+    "input": " please",
+    "output": ""
+  },
+  {
+    "input": "r u",
+    "output": "are you"
+  }
+]
