@@ -4,6 +4,8 @@ import React, {
   useState,
   useCallback,
   useMemo,
+  useRef,
+  useEffect,
 } from "react";
 import type { NextPage } from "next";
 import axios from "axios";
@@ -12,7 +14,13 @@ import { OWNER, TMessage, TResponseAPI } from "../types/client.types";
 
 const Home: NextPage = () => {
   const [inputTxt, setInputTxt] = useState<string>("");
-  const [messages, setMessages] = useState<TMessage[]>([]);
+  const [messages, setMessages] = useState<TMessage[]>([
+    {
+      text: "Welcome!",
+      owner: OWNER.BOT,
+    },
+  ]);
+  const messageDivRef = useRef<HTMLDivElement>(null);
 
   const handleOnChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
     setInputTxt(event.target.value);
@@ -46,6 +54,11 @@ const Home: NextPage = () => {
     [inputTxt]
   );
 
+  useEffect(
+    () => messageDivRef?.current?.scrollIntoView({ behavior: "smooth" }),
+    [messages]
+  );
+
   const renderMessages = useMemo(
     () =>
       messages.map((value, i) =>
@@ -72,7 +85,10 @@ const Home: NextPage = () => {
   return (
     <main className="main flex-center">
       <div className="chat flex-center">
-        <div className="messages">{renderMessages}</div>
+        <div className="messages">
+          {renderMessages}
+          <div ref={messageDivRef} />
+        </div>
         <input
           className="input"
           type="text"

@@ -20,6 +20,46 @@
         "Can you guess?",
         "I don't know actually"
       ]
+    },
+    {
+      "input": ["what is moneyhub"],
+      "output": ["Company for your interest", "Help to manage your finances"]
+    },
+    {
+      "input": ["happy", "good", "fun", "wonderful", "fantastic", "cool"],
+      "output": ["Have you ever felt bad?", "Glad to hear it"]
+    },
+    {
+      "input": ["bad", "bored", "tired"],
+      "output": ["Why?", "Why? You shouldn't!"]
+    },
+    {
+      "input": ["help me", "tell me story", "tell me joke"],
+      "output": ["What about?", "Once upon a time..."]
+    },
+    {
+      "input": ["ah", "yes", "ok", "okay", "nice"],
+      "output": ["Tell me a story", "Tell me a joke", "Tell me about yourself"]
+    },
+    {
+      "input": ["bye", "good bye", "goodbye", "see you later"],
+      "output": ["Bye", "Goodbye", "See you later"]
+    },
+    {
+      "input": ["what", "why", "how", "where", "when"],
+      "output": ["Great question"]
+    },
+    {
+      "input": ["no", "not sure", "maybe", "no thanks"],
+      "output": ["That's ok", "I understand", "What do you want to talk about?"]
+    },
+    {
+      "input": [""],
+      "output": ["Please say something :("]
+    },
+    {
+      "input": ["haha", "ha", "lol", "hehe", "funny", "joke"],
+      "output": ["Haha!", "Good one!"]
     }
   ],
   "alternative": [

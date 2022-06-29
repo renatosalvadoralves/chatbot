@@ -22,5 +22,9 @@
   {
     "input": "r u",
     "output": "are you"
+  },
+  {
+    "input": " some",
+    "output": ""
   }
 ]
