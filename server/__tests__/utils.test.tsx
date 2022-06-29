@@ -6,10 +6,6 @@ describe("Utils", () => {
       text: "i feel nice",
       configurations: [
         {
-          input: " a ",
-          output: " ",
-        },
-        {
           input: "i feel ",
           output: "",
         },

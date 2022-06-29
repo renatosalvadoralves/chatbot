@@ -23,7 +23,7 @@
     },
     {
       "input": ["what is moneyhub"],
-      "output": ["Company for your interest", "Help to manage your finances"]
+      "output": ["Help to manage your finances"]
     },
     {
       "input": ["happy", "good", "fun", "wonderful", "fantastic", "cool"],
