@@ -1,16 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import Message from "../../server/message.entity";
-
-type Data = {
-  message: string;
-};
+import { TResponse } from "../../types/server.types";
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<TResponse>
 ) {
-  const { body } = req;
-  const { reply } = new Message(body.message);
-
+  const { reply } = new Message(req.body.message);
   res.status(200).json({ message: reply });
 }
