@@ -64,6 +64,10 @@
     {
       "input": ["thanks"],
       "output": ["You are welcome!"]
+    },
+    {
+      "input": ["moneyhub"],
+      "output": ["Best company in the world!"]
     }
   ],
   "alternative": [
