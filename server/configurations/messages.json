@@ -60,6 +60,10 @@
     {
       "input": ["haha", "ha", "lol", "hehe", "funny", "joke"],
       "output": ["Haha!", "Good one!"]
+    },
+    {
+      "input": ["thanks"],
+      "output": ["You are welcome!"]
     }
   ],
   "alternative": [
